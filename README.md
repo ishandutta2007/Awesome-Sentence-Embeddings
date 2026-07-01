@@ -9,8 +9,12 @@ Sentence Embedding is a foundational Natural Language Processing (NLP) paradigm 
 
 The technical implementation of sentence-level mapping has transitioned from naive unigram word-vector averaging to recurrent sequential tracking, deep cross-encoder checkpoints, and modern contrastive bi-encoder transformers.
 
-```
-[Bag-of-Words / Average Word2Vec] ───> [Recurrent Encoders & InferSent] ───> [Cross-to-Bi-Encoders (SBERT, 2019)] ───> [Web-Scale Contrastive (LLM-Embeddings)](Discards Word Order / Syntax)          (Sequential Bottleneck Backprop)             (Fused Siamese Softmax Alignment)            (Multi-Task Instruction Fine-Tuning)
+```mermaid
+flowchart LR
+    A["Bag-of-Words / Average Word2Vec<br/>(Discards Word Order / Syntax)"]
+    --> B["Recurrent Encoders & InferSent<br/>(Sequential Bottleneck Backprop)"]
+    --> C["Cross-to-Bi-Encoders (SBERT, 2019)<br/>(Fused Siamese Softmax Alignment)"]
+    --> D["Web-Scale Contrastive (LLM Embeddings)<br/>(Multi-Task Instruction Fine-Tuning)"]
 ```
 
 *   **The Flat Aggregation Era (Bag-of-Words & Vector Averaging, ~2013–2016)**
