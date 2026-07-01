@@ -1,11 +1,15 @@
-# Awesome-Sentence-Embeddings
-## Sentence Embeddings: Evolution, Variants, Types, & Applications
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Sentence Embeddings Banner" width="100%">
+</p>
+
+# 🚀 Awesome-Sentence-Embeddings
+## 🧠 Sentence Embeddings: Evolution, Variants, Types, & Applications
 
 Sentence Embedding is a foundational Natural Language Processing (NLP) paradigm that maps variable-length sequences of text—such as phrases, sentences, or full paragraphs—into a fixed-size, continuous vector space. While word embeddings capture the isolated semantic coordinates of independent tokens (e.g., mapping `king` and `queen`), sentence embeddings map complete compositional contexts, structural syntax layouts, and logical premises. By converting textual syntax into high-dimensional geometric coordinates (dense vectors), sentence embeddings enable computers to calculate mathematical distance scores (such as Cosine Similarity) to execute semantic search, document clustering, and information retrieval instantly.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The technical implementation of sentence-level mapping has transitioned from naive unigram word-vector averaging to recurrent sequential tracking, deep cross-encoder checkpoints, and modern contrastive bi-encoder transformers.
 
@@ -26,7 +30,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Structural Variants
+## 🧩 2. Core Functional & Structural Variants
 
 Sentence embedding frameworks are strictly categorized based on how parameters are routed, crossed, and optimized during similarity evaluations.
 
@@ -38,7 +42,7 @@ Sentence embedding frameworks are strictly categorized based on how parameters a
 
 ---
 
-## 3. Training Paradigms & Loss Formulations
+## 🧪 3. Training Paradigms & Loss Formulations
 
 Because manual human labeling of millions of sentence alignment pairs is economically unviable, sentence encoders rely heavily on weakly supervised and self-supervised objectives.
 
@@ -50,7 +54,7 @@ Because manual human labeling of millions of sentence alignment pairs is economi
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## ⚙️ 4. Production Engineering Challenges & Hardware Solutions
 
 Deploying high-volume sentence embedding pipelines into commercial enterprise stacks introduces intense memory allocation caps and operational bottlenecks.
 
@@ -61,7 +65,7 @@ Deploying high-volume sentence embedding pipelines into commercial enterprise st
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🌐 5. Frontier Real-World AI Applications
 
 | Frontier Application | Application Details | Year First Used | First Used Paper |
 | :--- | :--- | :---: | :--- |
@@ -71,7 +75,7 @@ Deploying high-volume sentence embedding pipelines into commercial enterprise st
 
 ---
 
-## References
+## 📚 References
 1. Mikolov, T., et al. (2013). Distributed representations of words and phrases and their compositionality. *Advances in Neural Information Processing Systems (NeurIPS)*, 26, 3111-3119.
 2. Conneau, A., et al. (2017). Supervised learning of universal sentence embeddings from natural language inference data. *Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing (EMNLP)*, 670-680.
 3. Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP)*, 3982-3992.
