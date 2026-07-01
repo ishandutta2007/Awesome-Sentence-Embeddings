@@ -35,19 +35,19 @@ flowchart LR
 
 Sentence embedding frameworks are strictly categorized based on how parameters are routed, crossed, and optimized during similarity evaluations.
 
-### A. Bi-Encoder Architectures (Dual-Tower Matching)
-*   **Mechanism:** Projects sentence A and sentence B through completely separate, parallel text encoders independently, generating two isolated embedding vectors. The semantic similarity is calculated instantly as a low-cost vector dot product or cosine coordinate check.
-*   **Pros:** Highly scalable; embeddings can be calculated once offline, saved to a vector database, and searched via low-latency index lookups.
-*   **Examples:** SBERT, `bge-large-en`, and `text-embedding-3-small`.
+- ### A. Bi-Encoder Architectures (Dual-Tower Matching)
+	*   **Mechanism:** Projects sentence A and sentence B through completely separate, parallel text encoders independently, generating two isolated embedding vectors. The semantic similarity is calculated instantly as a low-cost vector dot product or cosine coordinate check.
+	*   **Pros:** Highly scalable; embeddings can be calculated once offline, saved to a vector database, and searched via low-latency index lookups.
+	*   **Examples:** SBERT, `bge-large-en`, and `text-embedding-3-small`.
 
-### B. Cross-Encoder Architectures (Full-Attention Fusion)
-*   **Mechanism:** Concatenates both sentences into a single, unified text string interleaved with a structural separator token (`Sentence A [SEP] Sentence B`) and feeds it to the Transformer in a single forward pass.
-*   **Pros:** Achieves maximal semantic precision because full cross-attention calculations occur between every word in both sentences simultaneously.
-*   **Cons:** Incredibly latent; computationally unviable for high-volume database lookups because checking a new query requires executing a full deep-network pass against *every single document row* individually.
+- ### B. Cross-Encoder Architectures (Full-Attention Fusion)
+	*   **Mechanism:** Concatenates both sentences into a single, unified text string interleaved with a structural separator token (`Sentence A [SEP] Sentence B`) and feeds it to the Transformer in a single forward pass.
+	*   **Pros:** Achieves maximal semantic precision because full cross-attention calculations occur between every word in both sentences simultaneously.
+	*   **Cons:** Incredibly latent; computationally unviable for high-volume database lookups because checking a new query requires executing a full deep-network pass against *every single document row* individually.
 
-### C. Dense vs. Sparse Embedding Models
-*   **Mechanism:** Dense models map strings to continuous multi-dimensional floats (e.g., a 1536-dimension array capturing abstract meanings). Sparse embedding models (like SPLADE) map sentences directly to vocabulary token frequencies, producing an uncompressed, sparse vector containing mostly zeros.
-*   **Pros:** Sparse layouts offer exceptional exact-keyword matching resolution (essential for searching product serial numbers or legal codes), while dense profiles excel at cross-phrasing abstract concepts.
+- ### C. Dense vs. Sparse Embedding Models
+	*   **Mechanism:** Dense models map strings to continuous multi-dimensional floats (e.g., a 1536-dimension array capturing abstract meanings). Sparse embedding models (like SPLADE) map sentences directly to vocabulary token frequencies, producing an uncompressed, sparse vector containing mostly zeros.
+	*   **Pros:** Sparse layouts offer exceptional exact-keyword matching resolution (essential for searching product serial numbers or legal codes), while dense profiles excel at cross-phrasing abstract concepts.
 
 ---
 
