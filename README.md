@@ -5,7 +5,11 @@
 # 🚀 Awesome-Sentence-Embeddings
 ## 🧠 Sentence Embeddings: Evolution, Variants, Types, & Applications
 
-Sentence Embedding is a foundational Natural Language Processing (NLP) paradigm that maps variable-length sequences of text—such as phrases, sentences, or full paragraphs—into a fixed-size, continuous vector space. While word embeddings capture the isolated semantic coordinates of independent tokens (e.g., mapping `king` and `queen`), sentence embeddings map complete compositional contexts, structural syntax layouts, and logical premises. By converting textual syntax into high-dimensional geometric coordinates (dense vectors), sentence embeddings enable computers to calculate mathematical distance scores (such as Cosine Similarity) to execute semantic search, document clustering, and information retrieval instantly.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
+Sentence Embedding is a foundational Natural Language Processing (NLP) paradigm that maps variable-length sequences of text—such as phrases, sentences, or full paragraphs—into a fixed-size, continuous vector space. By encoding complete composition context, structural syntax layout, and semantic logic, sentence embeddings enable highly accurate semantic search, document clustering, natural language understanding (NLU), and real-time information retrieval (IR) using vector databases. This curated list guides you through the evolution of sentence embedding architectures, training losses (like InfoNCE, MNRL, Matryoshka), and practical AI applications.
 
 ---
 
